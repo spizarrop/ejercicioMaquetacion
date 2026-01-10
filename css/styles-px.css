@@ -1,0 +1,117 @@
+/* Reset estilos navegador*/
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+/* *****************************[ Layout ]***************************** */
+
+/* =============================[ Header ]============================= */
+header {
+    width: 1220px;
+    height: 100px;
+    padding: 0 20px 0 20px;
+    background-color: #cccccc;
+}
+
+/* =============================[ Body ]============================= */
+body {
+    width: 1260px;
+    height: 600px;  /* 100px de header + 400px de main + 100px footer*/
+    margin: 45px auto 0 auto;
+    background-color: #333333;
+}
+
+/* =============================[ Main ]============================= */
+main {
+    float: left;
+    width: 780px;
+    height: 370px; /* 400px - 30px padding top*/
+    padding: 30px 10px 0 10px;
+    margin: 0 20px 0 20px;
+    background-color: #C0C0C0;
+}
+
+/* =============================[ Aside ]============================= */
+aside {
+    float: left;
+    width: 370px;
+    height: 350px; /* 400px - 50px padding top*/
+    padding: 50px 0 0 30px;
+    margin: 0 20px 0 0;
+    background-color: #C0C0C0;
+}
+
+/* =============================[ Footer ]============================= */
+footer {
+    width: 1260px;
+    height: 100px;
+    clear: both;
+    background-color: #cccccc;
+}
+
+/* *****************************[ Contenido ]***************************** */
+/* Header NAV */
+header h1 {
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+}
+
+header nav {
+    height: 50px;
+    background-color: #999999;
+}
+
+header #nav-izq {
+    float: left;
+}
+
+header #nav-der {
+    float: right;
+}
+
+header nav li {
+    display: block;
+    float: left;
+    width: 100px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    color: black;
+}
+
+/* Caja MAIN */
+main #cajaIzquierda p{
+    margin-bottom: 4em;
+}
+
+/* Formulario MAIN*/
+main form {
+    padding: 1em 0 0 70px;
+    background-color: #cccccc;
+}
+
+main form input {
+    display: block;
+    width: 486.8px; /* 500px - 10px padding left - 3,2px borders*/
+    padding-left: 10px;
+    margin-bottom: 20px;
+}
+
+main form button {
+    width: 150px;
+    height: 2em;
+    background-color: #D8D8D8;
+}
+
+/* Imagen ASIDE */
+aside #cajaImagen{
+    width: 150px;
+}
+
+aside #cajaImagen img{
+    width: 100%;
+    height: auto;
+}
