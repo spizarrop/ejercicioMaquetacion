@@ -1,58 +1,52 @@
-/* Reset estilos navegador*/
+/* Restablezco los estilos navegador */
 * {
     margin: 0;
     padding: 0;
     text-decoration: none;
 }
 
-/* *****************************[ Layout ]***************************** */
-
-/* =============================[ Header ]============================= */
+/* =============================[ Layout ]============================= */
 header {
-    width: 1220px;
+    width: 1220px; /* 1260px (total) - 40 (padding izq y dere) = 1220px */
     height: 100px;
     padding: 0 20px 0 20px;
     background-color: #cccccc;
 }
 
-/* =============================[ Body ]============================= */
 body {
     width: 1260px;
-    height: 600px;  /* 100px de header + 400px de main + 100px footer*/
+    height: 600px; /* 100px (header) + 400px (main/aside) + 100px (footer) = 600px */
     margin: 45px auto 0 auto;
     background-color: #333333;
 }
 
-/* =============================[ Main ]============================= */
 main {
     float: left;
-    width: 780px;
-    height: 370px; /* 400px - 30px padding top*/
+    width: 780px; /* 800px (total) - 20px (padding izq y der) = 780px */
+    height: 370px; /* 400px - 30px (padding top) = 370px */
     padding: 30px 10px 0 10px;
     margin: 0 20px 0 20px;
     background-color: #C0C0C0;
 }
 
-/* =============================[ Aside ]============================= */
 aside {
     float: left;
-    width: 370px;
-    height: 350px; /* 400px - 50px padding top*/
+    width: 370px; /* 400px (total) - 30px (padding izq) = 370px */
+    height: 350px; /* 400px - 50px (padding top) = 350px */
     padding: 50px 0 0 30px;
     margin: 0 20px 0 0;
     background-color: #C0C0C0;
 }
 
-/* =============================[ Footer ]============================= */
 footer {
     width: 1260px;
     height: 100px;
-    clear: both;
+    clear: both; /* Hago que se posicione debajo porque las cajas anteriores (main y aside) estan flotadas */
     background-color: #cccccc;
 }
 
-/* *****************************[ Contenido ]***************************** */
-/* Header NAV */
+/* =============================[ Contenido ]============================= */
+/* HEADER */
 header h1 {
     height: 50px;
     line-height: 50px;
@@ -82,33 +76,32 @@ header nav li {
     color: black;
 }
 
-/* Caja MAIN */
+/* MAIN */
 main #cajaIzquierda p{
-    margin-bottom: 4em;
+    margin-bottom: 4em; /* 4 veces tamaño de la letra de su contenedor */
 }
 
-/* Formulario MAIN*/
 main form {
     padding: 1em 0 0 70px;
     background-color: #cccccc;
 }
 
-main form input {
+main form input[type="text"] {
     display: block;
-    width: 486.8px; /* 500px - 10px padding left - 3,2px borders*/
+    width: 486.8px; /* 500px (total) - 10px (padding left) - 3.2px (border de 1.6px cada uno segun mi navegador) = 486.8px */
     padding-left: 10px;
     margin-bottom: 20px;
 }
 
-main form button {
-    width: 150px;
+main form button[type="submit"] {
+    width: 150px; /* 150px (porque es box-sizing: borderbox) */
     height: 2em;
     background-color: #D8D8D8;
 }
 
-/* Imagen ASIDE */
+/* ASIDE */
 aside #cajaImagen{
-    width: 150px;
+    width: 150px; /* 150px (tamaño aplicado al div contenedor de la imagen) */
 }
 
 aside #cajaImagen img{
