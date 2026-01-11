@@ -26,24 +26,6 @@ body {
     background-color: #FF6961;
 }
 
-main {
-    float: left;
-    width: 780px; /* 800px (total) - 20px (padding izq y der) = 780px */
-    height: 370px; /* 400px - 30px (padding top) = 370px */
-    padding: 30px 10px 0 10px;
-    margin: 0 20px 0 20px;
-    background-color: #C0C0C0;
-}
-
-aside {
-    float: left;
-    width: 370px; /* 400px (total) - 30px (padding izq) = 370px */
-    height: 350px; /* 400px - 50px (padding top) = 350px */
-    padding: 50px 0 0 30px;
-    margin: 0 20px 0 0;
-    background-color: #C0C0C0;
-}
-
 footer {
     width: 1260px;
     height: 100px;
@@ -82,6 +64,15 @@ header nav li {
 }
 
 /* MAIN */
+main {
+    float: left;
+    width: 780px; /* 800px (total) - 20px (padding izq y der) = 780px */
+    height: 370px; /* 400px - 30px (padding top) = 370px */
+    padding: 30px 10px 0 10px;
+    margin: 0 20px 0 20px;
+    background-color: #C0C0C0;
+}
+
 main #cajaIzquierda p{
     margin-bottom: 4em; /* 4 veces tamaño de la letra de su contenedor */
 }
@@ -105,6 +96,15 @@ main form button[type="submit"] {
 }
 
 /* ASIDE */
+aside {
+    float: left;
+    width: 370px; /* 400px (total) - 30px (padding izq) = 370px */
+    height: 350px; /* 400px - 50px (padding top) = 350px */
+    padding: 50px 0 0 30px;
+    margin: 0 20px 0 0;
+    background-color: #C0C0C0;
+}
+
 aside #cajaImagen{
     width: 150px; /* 150px (tamaño aplicado al div contenedor de la imagen) */
 }
